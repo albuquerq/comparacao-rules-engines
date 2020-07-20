@@ -9,5 +9,6 @@
         <module name="drools-teste" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="9" />
   </component>
 </project>
