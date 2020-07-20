@@ -1,0 +1,14 @@
+
+rule OiMundo "Quando o nome da pessoa for diferente de vazio" {
+    when
+        pessoa.Nome != ""
+    then
+        pessoa.Ola();
+}
+
+rule UmZe "Quando no nome da pessoa contém Zé" {
+    when
+        lib.IsZe(pessoa.Nome) == true
+    then
+        lib.CumprimenteZe();
+}
